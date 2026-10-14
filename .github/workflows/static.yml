@@ -31,7 +31,7 @@ jobs:
           # A linha do cache foi removida aqui
 
       - name: Install dependencies
-        run: npm install # Aqui mudamos de 'npm ci' para 'npm install'
+        run: npm install --legacy-peer-deps # Aqui mudamos de 'npm ci' para 'npm install'
 
       - name: Build
         run: npm run build
